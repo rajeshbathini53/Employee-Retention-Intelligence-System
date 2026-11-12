@@ -1,0 +1,9 @@
+role_id,role_name,job_family,level
+ROLE-0001,Software Engineer,Engineering,L2
+ROLE-0002,Senior Engineer,Engineering,L3
+ROLE-0003,Data Analyst,Analytics,L2
+ROLE-0004,Product Manager,Product,L3
+ROLE-0005,HR Specialist,People,L2
+ROLE-0006,Operations Associate,Operations,L1
+ROLE-0007,QA Engineer,Engineering,L2
+ROLE-0008,Engineering Manager,Engineering,L4

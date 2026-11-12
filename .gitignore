@@ -1,0 +1,22 @@
+# Python virtual environments
+venv/
+venv312/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment and secrets
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+data/exports/workforce_seed.sql
+data/generated/EngagementSurvey.json
+data/generated/TenureSnapshot.json
+data/generated/WorkloadSnapshot.json

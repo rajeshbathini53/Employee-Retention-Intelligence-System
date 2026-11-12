@@ -1,0 +1,42 @@
+[
+  {
+    "case_id":"ANOM-001",
+    "employee_id":"EMP-000009",
+    "issue_type":"FUTURE_INFORMATION_LEAKAGE",
+    "ground_truth_label":"FLAG",
+    "expected_action":"Feature timestamp occurs after prediction cutoff; must be excluded from model features.",
+    "observed_condition":"feature_event_date_after_prediction_cutoff",
+    "feature_cutoff_date":"2026-09-30",
+    "is_input_feature":false
+  },
+  {
+    "case_id":"ANOM-002",
+    "employee_id":"EMP-000013",
+    "issue_type":"MISSING_SURVEY_AS_NEGATIVE",
+    "ground_truth_label":"FLAG",
+    "expected_action":"Missing survey is represented as missing, not a zero\/negative engagement score.",
+    "observed_condition":"survey_status=MISSING and score=NULL",
+    "feature_cutoff_date":"2026-09-30",
+    "is_input_feature":false
+  },
+  {
+    "case_id":"ANOM-003",
+    "employee_id":"EMP-000064",
+    "issue_type":"OUTCOME_DATE_INCONSISTENCY",
+    "ground_truth_label":"FLAG",
+    "expected_action":"Ground-truth case where outcome label conflicts with termination\/event date.",
+    "observed_condition":"label=VOLUNTARY_ATTRITION with contradictory event date",
+    "feature_cutoff_date":"2026-09-30",
+    "is_input_feature":false
+  },
+  {
+    "case_id":"ANOM-004",
+    "employee_id":"EMP-000066",
+    "issue_type":"UNEXPLAINED_INDIVIDUAL_SCORE",
+    "ground_truth_label":"FLAG",
+    "expected_action":"A score without explanation\/human review must be flagged.",
+    "observed_condition":"score has no explanation and no human review",
+    "feature_cutoff_date":"2026-09-30",
+    "is_input_feature":false
+  }
+]

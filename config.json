@@ -1,0 +1,11 @@
+{
+  "seed": 20261022,
+  "employee_count": 10000,
+  "history_months": 24,
+  "attrition_rate_min": 0.05,
+  "attrition_rate_max": 0.15,
+  "as_of_date": "2026-09-30",
+  "future_horizon_days": 90,
+  "survey_missing_rate": 0.12,
+  "anomaly_count": 4
+}

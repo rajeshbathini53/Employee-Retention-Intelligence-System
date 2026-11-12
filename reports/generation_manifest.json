@@ -1,0 +1,22 @@
+{
+  "seed": 20261022,
+  "employee_count": 80,
+  "history_months": 24,
+  "snapshot_months": 24,
+  "as_of_date": "2026-09-30",
+  "actual_attrition_rate": 0.1,
+  "table_row_counts": {
+    "Employee": 80,
+    "Role": 8,
+    "Team": 5,
+    "TenureSnapshot": 1920,
+    "EngagementSurvey": 1920,
+    "WorkloadSnapshot": 1920,
+    "CompensationBand": 5,
+    "PromotionHistory": 19,
+    "AttritionOutcome": 8,
+    "Intervention": 23,
+    "TransferHistory": 11
+  },
+  "generator_version": "1.0.0"
+}

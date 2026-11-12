@@ -1,0 +1,5 @@
+case_id,employee_id,issue_type,ground_truth_label,expected_action,observed_condition,feature_cutoff_date,is_input_feature
+ANOM-001,EMP-000009,FUTURE_INFORMATION_LEAKAGE,FLAG,Feature timestamp occurs after prediction cutoff; must be excluded from model features.,feature_event_date_after_prediction_cutoff,2026-09-30,False
+ANOM-002,EMP-000013,MISSING_SURVEY_AS_NEGATIVE,FLAG,"Missing survey is represented as missing, not a zero/negative engagement score.",survey_status=MISSING and score=NULL,2026-09-30,False
+ANOM-003,EMP-000064,OUTCOME_DATE_INCONSISTENCY,FLAG,Ground-truth case where outcome label conflicts with termination/event date.,label=VOLUNTARY_ATTRITION with contradictory event date,2026-09-30,False
+ANOM-004,EMP-000066,UNEXPLAINED_INDIVIDUAL_SCORE,FLAG,A score without explanation/human review must be flagged.,score has no explanation and no human review,2026-09-30,False

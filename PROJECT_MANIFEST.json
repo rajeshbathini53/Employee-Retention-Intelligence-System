@@ -1,0 +1,25 @@
+{
+  "project": "Employee Retention Intelligence System",
+  "build_status": "PASS",
+  "seed": 20261022,
+  "employees": 10000,
+  "history_months": 24,
+  "attrition_rate": 0.1,
+  "future_outcome_horizon_days": 90,
+  "table_row_counts": {
+    "Role": 8,
+    "Team": 5,
+    "CompensationBand": 5,
+    "Employee": 10000,
+    "TenureSnapshot": 240000,
+    "EngagementSurvey": 240000,
+    "WorkloadSnapshot": 240000,
+    "PromotionHistory": 2185,
+    "AttritionOutcome": 1000,
+    "Intervention": 3947,
+    "TransferHistory": 1223
+  },
+  "validation": "All generated validation checks PASS",
+  "pytest": "2 tests passed in prior run",
+  "note": "Synthetic data only; supportive decision signals require human review."
+}

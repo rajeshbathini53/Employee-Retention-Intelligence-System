@@ -1,0 +1,237 @@
+[
+  {
+    "check":"employee_count",
+    "status":"PASS",
+    "details":"10000"
+  },
+  {
+    "check":"Employee_primary_key_unique",
+    "status":"PASS",
+    "details":"rows=10000"
+  },
+  {
+    "check":"Role_primary_key_unique",
+    "status":"PASS",
+    "details":"rows=8"
+  },
+  {
+    "check":"Team_primary_key_unique",
+    "status":"PASS",
+    "details":"rows=5"
+  },
+  {
+    "check":"TenureSnapshot_primary_key_unique",
+    "status":"PASS",
+    "details":"rows=240000"
+  },
+  {
+    "check":"EngagementSurvey_primary_key_unique",
+    "status":"PASS",
+    "details":"rows=240000"
+  },
+  {
+    "check":"WorkloadSnapshot_primary_key_unique",
+    "status":"PASS",
+    "details":"rows=240000"
+  },
+  {
+    "check":"CompensationBand_primary_key_unique",
+    "status":"PASS",
+    "details":"rows=5"
+  },
+  {
+    "check":"PromotionHistory_primary_key_unique",
+    "status":"PASS",
+    "details":"rows=2185"
+  },
+  {
+    "check":"AttritionOutcome_primary_key_unique",
+    "status":"PASS",
+    "details":"rows=1000"
+  },
+  {
+    "check":"Intervention_primary_key_unique",
+    "status":"PASS",
+    "details":"rows=3947"
+  },
+  {
+    "check":"TransferHistory_primary_key_unique",
+    "status":"PASS",
+    "details":"rows=1223"
+  },
+  {
+    "check":"TenureSnapshot_employee_fk",
+    "status":"PASS",
+    "details":"invalid=0"
+  },
+  {
+    "check":"EngagementSurvey_employee_fk",
+    "status":"PASS",
+    "details":"invalid=0"
+  },
+  {
+    "check":"WorkloadSnapshot_employee_fk",
+    "status":"PASS",
+    "details":"invalid=0"
+  },
+  {
+    "check":"PromotionHistory_employee_fk",
+    "status":"PASS",
+    "details":"invalid=0"
+  },
+  {
+    "check":"AttritionOutcome_employee_fk",
+    "status":"PASS",
+    "details":"invalid=0"
+  },
+  {
+    "check":"Intervention_employee_fk",
+    "status":"PASS",
+    "details":"invalid=0"
+  },
+  {
+    "check":"TransferHistory_employee_fk",
+    "status":"PASS",
+    "details":"invalid=0"
+  },
+  {
+    "check":"Employee_role_fk",
+    "status":"PASS",
+    "details":"role references"
+  },
+  {
+    "check":"Employee_team_fk",
+    "status":"PASS",
+    "details":"team references"
+  },
+  {
+    "check":"Employee_compensation_fk",
+    "status":"PASS",
+    "details":"band references"
+  },
+  {
+    "check":"Transfer_from_team_fk",
+    "status":"PASS",
+    "details":"from-team references"
+  },
+  {
+    "check":"Transfer_to_team_fk",
+    "status":"PASS",
+    "details":"to-team references"
+  },
+  {
+    "check":"missing_survey_not_negative",
+    "status":"PASS",
+    "details":"missing surveys remain null"
+  },
+  {
+    "check":"engagement_score_range",
+    "status":"PASS",
+    "details":"0..100"
+  },
+  {
+    "check":"workload_nonnegative",
+    "status":"PASS",
+    "details":"hours >= 0"
+  },
+  {
+    "check":"tenure_nonnegative",
+    "status":"PASS",
+    "details":"months >= 0"
+  },
+  {
+    "check":"attrition_rate_5_to_15_pct",
+    "status":"PASS",
+    "details":"rate=0.1000"
+  },
+  {
+    "check":"outcomes_after_as_of_date",
+    "status":"PASS",
+    "details":"future-horizon labels"
+  },
+  {
+    "check":"outcomes_within_future_horizon",
+    "status":"PASS",
+    "details":"within configured horizon"
+  },
+  {
+    "check":"TenureSnapshot_no_future_features",
+    "status":"PASS",
+    "details":"cutoff=2026-09-30"
+  },
+  {
+    "check":"EngagementSurvey_no_future_features",
+    "status":"PASS",
+    "details":"cutoff=2026-09-30"
+  },
+  {
+    "check":"WorkloadSnapshot_no_future_features",
+    "status":"PASS",
+    "details":"cutoff=2026-09-30"
+  },
+  {
+    "check":"sqlite_all_tables",
+    "status":"PASS",
+    "details":"['AttritionOutcome', 'CompensationBand', 'Employee', 'EngagementSurvey', 'Intervention', 'PromotionHistory', 'Role', 'Team', 'TenureSnapshot', 'TransferHistory', 'WorkloadSnapshot']"
+  },
+  {
+    "check":"sqlite_foreign_key_check",
+    "status":"PASS",
+    "details":"violations=0"
+  },
+  {
+    "check":"sqlite_Employee_row_count",
+    "status":"PASS",
+    "details":"csv=10000, db=10000"
+  },
+  {
+    "check":"sqlite_Role_row_count",
+    "status":"PASS",
+    "details":"csv=8, db=8"
+  },
+  {
+    "check":"sqlite_Team_row_count",
+    "status":"PASS",
+    "details":"csv=5, db=5"
+  },
+  {
+    "check":"sqlite_TenureSnapshot_row_count",
+    "status":"PASS",
+    "details":"csv=240000, db=240000"
+  },
+  {
+    "check":"sqlite_EngagementSurvey_row_count",
+    "status":"PASS",
+    "details":"csv=240000, db=240000"
+  },
+  {
+    "check":"sqlite_WorkloadSnapshot_row_count",
+    "status":"PASS",
+    "details":"csv=240000, db=240000"
+  },
+  {
+    "check":"sqlite_CompensationBand_row_count",
+    "status":"PASS",
+    "details":"csv=5, db=5"
+  },
+  {
+    "check":"sqlite_PromotionHistory_row_count",
+    "status":"PASS",
+    "details":"csv=2185, db=2185"
+  },
+  {
+    "check":"sqlite_AttritionOutcome_row_count",
+    "status":"PASS",
+    "details":"csv=1000, db=1000"
+  },
+  {
+    "check":"sqlite_Intervention_row_count",
+    "status":"PASS",
+    "details":"csv=3947, db=3947"
+  },
+  {
+    "check":"sqlite_TransferHistory_row_count",
+    "status":"PASS",
+    "details":"csv=1223, db=1223"
+  }
+]

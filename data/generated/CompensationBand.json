@@ -1,0 +1,37 @@
+[
+  {
+    "compensation_band_id":"BAND-0001",
+    "band_name":"Band 1",
+    "min_salary":30000,
+    "max_salary":49999,
+    "currency":"USD"
+  },
+  {
+    "compensation_band_id":"BAND-0002",
+    "band_name":"Band 2",
+    "min_salary":50000,
+    "max_salary":74999,
+    "currency":"USD"
+  },
+  {
+    "compensation_band_id":"BAND-0003",
+    "band_name":"Band 3",
+    "min_salary":75000,
+    "max_salary":99999,
+    "currency":"USD"
+  },
+  {
+    "compensation_band_id":"BAND-0004",
+    "band_name":"Band 4",
+    "min_salary":100000,
+    "max_salary":139999,
+    "currency":"USD"
+  },
+  {
+    "compensation_band_id":"BAND-0005",
+    "band_name":"Band 5",
+    "min_salary":140000,
+    "max_salary":200000,
+    "currency":"USD"
+  }
+]

@@ -1,0 +1,6 @@
+compensation_band_id,band_name,min_salary,max_salary,currency
+BAND-0001,Band 1,30000,49999,USD
+BAND-0002,Band 2,50000,74999,USD
+BAND-0003,Band 3,75000,99999,USD
+BAND-0004,Band 4,100000,139999,USD
+BAND-0005,Band 5,140000,200000,USD

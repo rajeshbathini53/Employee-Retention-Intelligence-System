@@ -1,0 +1,75 @@
+{
+  "seed": 20261022,
+  "employee_count": 10000,
+  "history_months": 24,
+  "snapshot_months": 24,
+  "as_of_date": "2026-09-30",
+  "actual_attrition_rate": 0.0643,
+  "table_row_counts": {
+    "Employee": 10000,
+    "Role": 8,
+    "Team": 5,
+    "TenureSnapshot": 240000,
+    "EngagementSurvey": 240000,
+    "WorkloadSnapshot": 240000,
+    "CompensationBand": 5,
+    "PromotionHistory": 2231,
+    "AttritionOutcome": 643,
+    "Intervention": 4049
+  },
+  "generator_version": "1.0.0"
+}
+
+Validation summary:
+                              check status                                                                                                                                                            details
+                     employee_count   PASS                                                                                                                                                              10000
+        Employee_primary_key_unique   PASS                                                                                                                                                         rows=10000
+            Role_primary_key_unique   PASS                                                                                                                                                             rows=8
+            Team_primary_key_unique   PASS                                                                                                                                                             rows=5
+  TenureSnapshot_primary_key_unique   PASS                                                                                                                                                        rows=240000
+EngagementSurvey_primary_key_unique   PASS                                                                                                                                                        rows=240000
+WorkloadSnapshot_primary_key_unique   PASS                                                                                                                                                        rows=240000
+CompensationBand_primary_key_unique   PASS                                                                                                                                                             rows=5
+PromotionHistory_primary_key_unique   PASS                                                                                                                                                          rows=2231
+AttritionOutcome_primary_key_unique   PASS                                                                                                                                                           rows=643
+    Intervention_primary_key_unique   PASS                                                                                                                                                          rows=4049
+         TenureSnapshot_employee_fk   PASS                                                                                                                                                          invalid=0
+       EngagementSurvey_employee_fk   PASS                                                                                                                                                          invalid=0
+       WorkloadSnapshot_employee_fk   PASS                                                                                                                                                          invalid=0
+       PromotionHistory_employee_fk   PASS                                                                                                                                                          invalid=0
+       AttritionOutcome_employee_fk   PASS                                                                                                                                                          invalid=0
+           Intervention_employee_fk   PASS                                                                                                                                                          invalid=0
+                   Employee_role_fk   PASS                                                                                                                                                    role references
+                   Employee_team_fk   PASS                                                                                                                                                    team references
+           Employee_compensation_fk   PASS                                                                                                                                                    band references
+        missing_survey_not_negative   PASS                                                                                                                                        missing surveys remain null
+             engagement_score_range   PASS                                                                                                                                                             0..100
+               workload_nonnegative   PASS                                                                                                                                                         hours >= 0
+                 tenure_nonnegative   PASS                                                                                                                                                        months >= 0
+  TenureSnapshot_no_future_features   PASS                                                                                                                                                  cutoff=2026-09-30
+EngagementSurvey_no_future_features   PASS                                                                                                                                                  cutoff=2026-09-30
+WorkloadSnapshot_no_future_features   PASS                                                                                                                                                  cutoff=2026-09-30
+                  sqlite_all_tables   PASS ['AttritionOutcome', 'CompensationBand', 'Employee', 'EngagementSurvey', 'Intervention', 'PromotionHistory', 'Role', 'Team', 'TenureSnapshot', 'WorkloadSnapshot']
+           sqlite_foreign_key_check   PASS                                                                                                                                                       violations=0
+          sqlite_Employee_row_count   PASS                                                                                                                                                csv=10000, db=10000
+              sqlite_Role_row_count   PASS                                                                                                                                                        csv=8, db=8
+              sqlite_Team_row_count   PASS                                                                                                                                                        csv=5, db=5
+    sqlite_TenureSnapshot_row_count   PASS                                                                                                                                              csv=240000, db=240000
+  sqlite_EngagementSurvey_row_count   PASS                                                                                                                                              csv=240000, db=240000
+  sqlite_WorkloadSnapshot_row_count   PASS                                                                                                                                              csv=240000, db=240000
+  sqlite_CompensationBand_row_count   PASS                                                                                                                                                        csv=5, db=5
+  sqlite_PromotionHistory_row_count   PASS                                                                                                                                                  csv=2231, db=2231
+  sqlite_AttritionOutcome_row_count   PASS                                                                                                                                                    csv=643, db=643
+      sqlite_Intervention_row_count   PASS                                                                                                                                                  csv=4049, db=4049
+
+Generation and validation completed successfully.
+\nSpreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

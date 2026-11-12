@@ -1,0 +1,7 @@
+{
+  "same_seed_csv_files_compared": 10,
+  "all_checksums_match": true,
+  "pytest": "2 passed",
+  "generation": "passed",
+  "attrition_rule": "deterministic rank from pre-outcome engagement/workload signals"
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "team_id":"TEAM-0001",
+    "team_name":"Platform",
+    "department":"Engineering"
+  },
+  {
+    "team_id":"TEAM-0002",
+    "team_name":"Data",
+    "department":"Analytics"
+  },
+  {
+    "team_id":"TEAM-0003",
+    "team_name":"Product",
+    "department":"Product"
+  },
+  {
+    "team_id":"TEAM-0004",
+    "team_name":"People Operations",
+    "department":"People"
+  },
+  {
+    "team_id":"TEAM-0005",
+    "team_name":"Business Operations",
+    "department":"Operations"
+  }
+]

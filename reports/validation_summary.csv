@@ -1,0 +1,48 @@
+check,status,details
+employee_count,PASS,10000
+Employee_primary_key_unique,PASS,rows=10000
+Role_primary_key_unique,PASS,rows=8
+Team_primary_key_unique,PASS,rows=5
+TenureSnapshot_primary_key_unique,PASS,rows=240000
+EngagementSurvey_primary_key_unique,PASS,rows=240000
+WorkloadSnapshot_primary_key_unique,PASS,rows=240000
+CompensationBand_primary_key_unique,PASS,rows=5
+PromotionHistory_primary_key_unique,PASS,rows=2185
+AttritionOutcome_primary_key_unique,PASS,rows=1000
+Intervention_primary_key_unique,PASS,rows=3947
+TransferHistory_primary_key_unique,PASS,rows=1223
+TenureSnapshot_employee_fk,PASS,invalid=0
+EngagementSurvey_employee_fk,PASS,invalid=0
+WorkloadSnapshot_employee_fk,PASS,invalid=0
+PromotionHistory_employee_fk,PASS,invalid=0
+AttritionOutcome_employee_fk,PASS,invalid=0
+Intervention_employee_fk,PASS,invalid=0
+TransferHistory_employee_fk,PASS,invalid=0
+Employee_role_fk,PASS,role references
+Employee_team_fk,PASS,team references
+Employee_compensation_fk,PASS,band references
+Transfer_from_team_fk,PASS,from-team references
+Transfer_to_team_fk,PASS,to-team references
+missing_survey_not_negative,PASS,missing surveys remain null
+engagement_score_range,PASS,0..100
+workload_nonnegative,PASS,hours >= 0
+tenure_nonnegative,PASS,months >= 0
+attrition_rate_5_to_15_pct,PASS,rate=0.1000
+outcomes_after_as_of_date,PASS,future-horizon labels
+outcomes_within_future_horizon,PASS,within configured horizon
+TenureSnapshot_no_future_features,PASS,cutoff=2026-09-30
+EngagementSurvey_no_future_features,PASS,cutoff=2026-09-30
+WorkloadSnapshot_no_future_features,PASS,cutoff=2026-09-30
+sqlite_all_tables,PASS,"['AttritionOutcome', 'CompensationBand', 'Employee', 'EngagementSurvey', 'Intervention', 'PromotionHistory', 'Role', 'Team', 'TenureSnapshot', 'TransferHistory', 'WorkloadSnapshot']"
+sqlite_foreign_key_check,PASS,violations=0
+sqlite_Employee_row_count,PASS,"csv=10000, db=10000"
+sqlite_Role_row_count,PASS,"csv=8, db=8"
+sqlite_Team_row_count,PASS,"csv=5, db=5"
+sqlite_TenureSnapshot_row_count,PASS,"csv=240000, db=240000"
+sqlite_EngagementSurvey_row_count,PASS,"csv=240000, db=240000"
+sqlite_WorkloadSnapshot_row_count,PASS,"csv=240000, db=240000"
+sqlite_CompensationBand_row_count,PASS,"csv=5, db=5"
+sqlite_PromotionHistory_row_count,PASS,"csv=2185, db=2185"
+sqlite_AttritionOutcome_row_count,PASS,"csv=1000, db=1000"
+sqlite_Intervention_row_count,PASS,"csv=3947, db=3947"
+sqlite_TransferHistory_row_count,PASS,"csv=1223, db=1223"
